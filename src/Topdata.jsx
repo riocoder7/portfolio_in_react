@@ -12,7 +12,7 @@ import SocialMedia from "./SocialMedia";
 function Topdata() {
   return (
     <>
-      <div className="2section w-full h-[800px] lg:h-[520px]  gap-5 lg:flex-row  flex flex-col ">
+      <div className="  2section w-full h-[800px] lg:h-[520px]  gap-5 lg:flex-row  flex flex-col ">
         <div className="w-full h-[400px] lg:w[50%] lg:h-full lg:p-16    p-8 ">
           <h2 className="text-xl font-light ">Hellow, I`m</h2>
           <h1 className="text-4xl font-bold text my-1">Sarfaraz alam </h1>
