@@ -6,6 +6,7 @@ function About() {
     <div className='font-mono '>
       <h1 className='text-center text-4xl font-semibold my-10'> <span className='text-[#02EEFE]'>About </span> Us</h1>
     <div className='w-full h-[120vh] sm:h-[750px] lg:h-[500px] lg:flex border border-red-500 '>
+      
 
         <div className='w-full h-[70%] md:h-[60%] lg:w[60%] lg:h-full px-7 text-md   md:px-20  py-5  '>
           <h1 className='sm:text-2xl text-1xl my-6'>About Me.</h1>
