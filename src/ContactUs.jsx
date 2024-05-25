@@ -2,7 +2,7 @@ import react from 'react'
 
 const Contactus = ()=>{
     return (
-   <div id='contactus' className=' w-full h-[850px] my-10    flex lg:justify-center xl:justify-center md:justify-center sm:px-10 2xl:justify-center  px-5 lg:py-5 font-serif'>
+   <div id='contactus' className=' w-full h-[850px] my-10    flex lg:justify-center xl:justify-center md:justify-center sm:px-10 2xl:justify-center  px-5 lg:py-5 '>
     <div className=' card w-full lg:w-[50%] md:w-[60%] 2xl:w-[50%] h-[95%] bg-[#171943]   rounded-lg  bg-blue shadow-black shadow-2xl lg:px-10 px-5 '>
         
         <span className='flex justify-center m-10 font-semibold text-4xl text-[#02EEFE] '> 

@@ -16,8 +16,8 @@ function Serv() {
       <div id="about"
         className={
           show === true
-            ? "w-full min-h-[1290px]   md:min-h-[800px] md:max-h[1100px] lg:h-[480px] lg:min-h-[860px] "
-            : "w-full h-[1290px]   md:h-[800px] md:h[1100px] lg:h-[480px]  "
+            ? "w-full min-h-[1290px]  md:min-h-[800px] md:max-h[1100px] lg:h-[480px] lg:min-h-[860px] "
+            : "w-full h-[1290px] my-20   md:h-[800px] md:h[1100px] lg:h-[480px]  "
         }
       >
         <div>

@@ -11,7 +11,7 @@ function navbar() {
   const [manuBtn, setmanuBtn] = useState(false);
 
 
-  console.log(" div visible ", manuBtn)
+  
   const manu_btn = (e) => {
     setmanuBtn(true)
   };
@@ -25,10 +25,10 @@ function navbar() {
 
   return (
     <>
-      <div id="navbar" className=" topbar w-full h-[950px] lg:h-[600px] bg-[#030A16]">
+      <div id="navbar" className=" topbar w-full h-[950px] xl:h-screen  bg-[#030A16]">
         <div className="navbar relative  w-full px-10 text-xl flex justify-between lg:justify-around items-center py-6">
           {/* navbar */}
-          <div className="logo font-bold">Rio Coder </div>
+          <div className="logo text-3xl">Rio Coder </div>
           <div className="navbar lg:invisible  font-bold">
             <MdOutlineDensitySmall className="cursor-pointer" onClick={manu_btn} />
           </div>

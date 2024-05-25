@@ -7,15 +7,16 @@ import Projects from "./Projects";
 // import Slider from "./Slider";
 import Footer from "./Footer";
 import Contactus from "./ContactUs";
-
+import About from "./About";
 function App() {
   return (
     <>
-      <div className="  text-white bg-[#0D1226] scroll-smooth">
+      <div className="  text-white bg-[#0D1226] scroll-smooth font-mono">
         <Navbar />
-       
+       <About/>
         <Services />
-        <h1 className="text-center text-5xl my-20 font-semibold text-[#02EEFE]">Projects</h1>
+        
+        <h1 id="projects" className="text-center text-5xl my-20  font-semibold text-[#02EEFE]">Projects</h1>
         <Projects/>
         <Contactus />
         <Footer />
