@@ -1,6 +1,9 @@
 import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from 'gsap';
-import React from 'react'
+import React from 'react';
+
+gsap.registerPlugin(ScrollTrigger) ;
 
 function About() {
 
@@ -8,43 +11,62 @@ function About() {
     
     gsap.from(".tittle",{
       y:-50,
-      delay:1,
-      duration:1,
       stagger:1,
       opacity:0,
+      scale:4,
+      scrollTrigger:{
+        trigger:".tittle",
+        scroller:"body",
+        start:"top 80%",
+        // markers:true,
+    },
       
     }),
     gsap.from(".subtittle, .pragraph1",{
       x:-50,
-      delay:1,
-      duration:1,
-      stagger:1,
+      stagger:0.5,
       opacity:0,
+      scrollTrigger:{
+        trigger:".subtittle, .pragraph1",
+        scroller:"body",
+        start:"top 50%",
+        // markers:true,
+    },
       
     }),
 
-    gsap.from(" .pragraph2 , .pragraph3",{
+    gsap.from(".pragraph2 , .pragraph3",{
       x:50,
-      delay:2,
       duration:2,
       stagger:1,
       opacity:0,
+      scrollTrigger:{
+        trigger:".pragraph2 , .pragraph3",
+        scroller:"body",
+        start:"top 70%",
+        // markers:true,
+    },
       
     }),
 
     gsap.from(".pragraph4",{
-      y:-50,
-      delay:3,
+      y:-80,
       duration:2,
       stagger:1,
       opacity:0,
+      scrollTrigger:{
+        trigger:".pragraph4",
+        scroller:"body",
+        start:"top 70%",
+        // markers:true,
+    },
     })
 
 
   })
   return (
 
-    <div className='font-mono '>
+    <div className='about font-mono overflow-hidden '>
       <h1 className='tittle text-center text-4xl font-semibold my-10'> <span className=' text-[#02EEFE]'>About </span> Us</h1>
     <div className='w-full h-[120vh] sm:h-[750px] lg:h-[500px] lg:flex  '>
 

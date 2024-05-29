@@ -26,8 +26,9 @@ function Topdata({timeline}) {
 
 
     }),
-    t2.from(".img",{
+    gsap.from(".img",{
       y:-100,
+      delay:5,
       opacity:0,
       stagger:0,
       scale:4

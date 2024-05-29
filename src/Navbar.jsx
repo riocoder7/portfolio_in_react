@@ -49,7 +49,7 @@ function navbar() {
 
   return (
     <>
-      <div id="navbar" className=" topbar w-full h-[950px] xl:h-screen  bg-[#030A16]">
+      <div id="navbar" className=" topbar w-full h-[950px] xl:h-screen overflow-hidden bg-[#030A16]">
         <div  className="navbar relative  w-full px-10 text-xl flex justify-between lg:justify-around items-center py-6">
           
           <div ref={logo} className="logo text-3xl ">Rio Coder </div>
@@ -73,7 +73,7 @@ function navbar() {
           </div>
           {
             manuBtn === false ? <div className="absolute  invisible  lg:invisible"> </div>
-              : <div className="absolute w-[100%] sm:w-[50%] rounded-lg h-[700px] bg-[#030a16f2]  right-0 top-0 lg:invisible">
+              : <div className="absolute w-[100%] sm:w-[50%] rounded-lg h-[700px] bg-[#030A16] z-50  right-0 top-0 lg:invisible">
 
                 <div className="relative w-full ">
                   <RxCross1 onClick={cross_btn} className="absolute text-3xl right-9 top-5 cursor-pointer" />
