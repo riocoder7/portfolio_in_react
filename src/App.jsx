@@ -11,7 +11,7 @@ import About from "./About";
 function App() {
   return (
     <>
-      <div className="  text-white bg-[#0D1226] scroll-smooth font-mono">
+      <div className="  text-white bg-[#0D1226] w-full scroll-smooth font-mono">
         <Navbar />
        <About/>
         <Services />

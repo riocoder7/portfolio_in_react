@@ -6,12 +6,15 @@ import SocialMedia from "./SocialMedia";
 import { IoIosMail } from "react-icons/io";
 import { FaWhatsappSquare } from "react-icons/fa";
 
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
+
 
 function navbar() {
+
   const [manuBtn, setmanuBtn] = useState(false);
 
-
-  
   const manu_btn = (e) => {
     setmanuBtn(true)
   };
@@ -21,29 +24,50 @@ function navbar() {
 
   }
 
+  const logo = useRef();
+  const home = useRef();
+  const about = useRef();
+  const contact = useRef();
+  const projects = useRef();
 
+  
+
+   useGSAP(()=>{
+    const t1 = gsap.timeline();
+    t1.from([logo.current,home.current,about.current,contact.current,projects.current],{
+      y:-500,
+      delay:0.5,
+      duration:2,
+      opacity:0,
+      color:"green",
+      stagger:0.2,
+
+    
+    })
+
+   })
 
   return (
     <>
       <div id="navbar" className=" topbar w-full h-[950px] xl:h-screen  bg-[#030A16]">
-        <div className="navbar relative  w-full px-10 text-xl flex justify-between lg:justify-around items-center py-6">
-          {/* navbar */}
-          <div className="logo text-3xl">Rio Coder </div>
+        <div  className="navbar relative  w-full px-10 text-xl flex justify-between lg:justify-around items-center py-6">
+          
+          <div ref={logo} className="logo text-3xl ">Rio Coder </div>
           <div className="navbar lg:invisible  font-bold">
             <MdOutlineDensitySmall className="cursor-pointer" onClick={manu_btn} />
           </div>
 
-          <div className="alllink hidden lg:flex lg:gap-16  font-bold ">
-            <div>
-              <a href="#home"> Home </a>
+          <div className=" hidden lg:flex lg:gap-16  font-bold ">
+            <div ref={home}>
+              <a  href="#home"> Home </a>
             </div>
-            <div>
+            <div ref={about}>
               <a href="#about"> About </a>
             </div>
-            <div>
+            <div ref={contact}>
               <a href="#contactus"> Contact </a>
-            </div>
-            <div>
+            </div >
+            <div ref={projects}>
               <a href="#projects"> Projects </a>
             </div>
           </div>
@@ -94,7 +118,7 @@ function navbar() {
 
 
 
-        <Topdata />
+        <Topdata  />
       </div>
     </>
   );
