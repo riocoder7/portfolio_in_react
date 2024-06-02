@@ -10,7 +10,7 @@ import { FaPython } from "react-icons/fa";
 
 function Serv() {
   const [show, setshow] = useState(false);
-  console.log(show);
+  
   return (
     <>
       <div id="about"

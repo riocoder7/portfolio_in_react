@@ -101,4 +101,8 @@
 .name{
   border:none;
   outline: none;
+  
+}
+.name:focus{
+  border: red;
 }

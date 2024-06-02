@@ -7,6 +7,8 @@ import gsap from 'gsap';
 
 
 function Footer() {
+
+
   
   useGSAP(()=>{
   
@@ -59,13 +61,13 @@ function Footer() {
   return (
 <>
 <div className=' relative w-full h-60  bg-[#030A16] flex justify-center overflow-hidden'>
-  <div className='w-[50%] h-full ' >
+  <div className='w-full lg:w-[50%] h-full my-16 sm:my-0' >
     
-       <span className=' footer_media flex justify-center m-auto'>
+       <span className=' footer_media flex justify-center w-f m-auto '>
          <SocialMedia /> 
        </span>
      
-     <div className='links flex justify-center  sm:gap-12 lg:gap-36 xl:gap-44 text-xl font-semibold  md:gap-20 gap-5'>
+     <div className='links flex justify-center  sm:gap-12 lg:gap-36 xl:gap-44 text-xl sm:my-10 font-semibold  md:gap-20 gap-5'>
       <a className='home' href="#navbar">Home </a>
       <a className='about' href="#about"> About </a>
       <a className='contact' href="#contactus">Contacts </a>
@@ -75,13 +77,13 @@ function Footer() {
           
   </div>
 
-  <div className='whatsapp absolute w-16 h-16 rounded-full   p-2  text-green-500 right-10'>
-    <a className='w-full h-full overflow-hidden text-5xl  rounded-full flex justify-center'  href="https://wa.me/917547859843/?text=Hi Sam, Whatsup">
+  <div className='whatsapp absolute w-16 h-16 rounded-full    p-2  text-green-500 right-10'>
+    <a className='w-full h-full overflow-hidden text-5xl   flex justify-center'  href="https://wa.me/917547859843/?text=Hi Sam, Whatsup">
       <FaWhatsappSquare/>
     </a>
   </div>
 
-  <div className='gmail  absolute w-16 h-16 rounded-full  top-20 right-10'>
+  <div className='gmail  absolute w-16 h-16 rounded-full top:0  sm:top-32 sm:right-10 right-60'>
     <a className='w-full h-full overflow-hidden text-6xl  rounded-full flex justify-center' href="mailto:someone@example.com">
       <IoIosMail />
     </a>

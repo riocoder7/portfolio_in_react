@@ -77,7 +77,7 @@ function About() {
           
           <p className='pragraph1 sm:text-xl '><span  className='hover:underline hover:text-[#7a7878] hover:text-1xl  font-semibold'>  Hi, I'm Sarfaraz Aalam,</span> a passionate designer, developer, and problem-solver with a love for creating innovative solutions.</p>
           <div className='pragraph2 bio my-5 sm:text-xl'>
-            <p>With a background in designing, <span className='font-extrabold font-sans hover:underline'>  Web development, and Mobile app developmen </span>. I hold a degree in software engineering from <span className='underline font-extrabold'>  Mumbai University </span>  and have worked with various clients on projects ranging from branding to web applications and mobile apps.</p>
+            <p>With a background in designing, <span className='font-extrabold font-sans hover:underline'>  Web development, and Mobile app developmen </span>. I hold a degree in software engineering from <span className='underline font-extrabold'> <a href="" target='_blank'>  Mumbai University </a></span>  and have worked with various clients on projects ranging from branding to web applications and mobile apps.</p>
 
           </div>
 

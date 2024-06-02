@@ -13,7 +13,8 @@ function App() {
     <>
       <div className="  text-white bg-[#0D1226] w-full scroll-smooth font-mono overflow-hidden">
         <Navbar />
-       <About/>
+       
+        <About/>
         <Services />
         
         <h1 id="projects" className="text-center text-5xl my-20  font-semibold text-[#02EEFE]">Projects</h1>

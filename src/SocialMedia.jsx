@@ -13,7 +13,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 export default function SocialMedia() {
 
   return (
-    <div className="social text-xl flex gap-5 my-7 flex-wrap ">
+    <div className="social text-xl flex gap-5 my-7 flex-wrap curr ">
             <div className="instagrame rounded-full p-2 w-10 h-10 flex justify-center items-center border border-[#02EEFE] ">
               <a href="https://www.instagrame.com/rio.coder">
                 {" "}
