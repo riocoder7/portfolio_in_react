@@ -16,7 +16,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export default function Projects() {
   const [value, setvalue] = useState(false)
-  console.log(value);
+ 
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
   const onAutoplayTimeLeft = (s, time, progress) => {
@@ -24,7 +24,6 @@ export default function Projects() {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
 
-  // gsap :
 
   useGSAP(()=>{
     gsap.from(".swiper-slide",{
@@ -64,8 +63,9 @@ export default function Projects() {
         className="mySwiper "
       >
         <SwiperSlide>
-          <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="  sm:w-[80%] lg:w-[70%] xl:w-[55%] 2xl:w-[50%]   relative  shadow-md w-[95%] h-[75%] bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
-            <img className='h-full w-full bg-cover absolute rounded-lg bg-center' src="public/WhatsApp Image 2024-05-10 at 7.38.19 AM (1).jpeg" alt="image " />
+          <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="sm:w-[80%] lg:w-[70%] xl:w-[55%] 2xl:w-[55%] bg-center  bg-cover relative  shadow-md w-[95%] h-[30%] sm:h-[70%] 2xl:h-[85%]  bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
+            
+            <img className='h-full w-full absolute rounded-lg bg-cente   ' src="public/Screenshot from 2024-04-13 19-34-20.png" alt="image " />
             <div className={value == false ? 'w-[100%] h-[100%] absolute   hidden' : 'w-[100%] h-[100%] absolute   bg-black opacity-60     rounded-lg block '}   >
               sarfaraz</div>
           </div>
@@ -73,7 +73,7 @@ export default function Projects() {
         </SwiperSlide>
         
         <SwiperSlide>
-          <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="  sm:w-[80%] lg:w-[70%] xl:w-[55%] 2xl:w-[50%]   relative  shadow-md w-[95%] h-[75%] bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
+        <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="sm:w-[80%] lg:w-[70%] xl:w-[55%] 2xl:w-[55%] bg-center  bg-cover relative  shadow-md w-[95%] h-[30%] sm:h-[70%] 2xl:h-[85%]  bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
             <img className='h-full w-full bg-cover absolute rounded-lg bg-center' src="public/WhatsApp Image 2024-05-10 at 7.38.19 AM (1).jpeg" alt="image " />
             <div className={value == false ? 'w-[100%] h-[100%] absolute   hidden' : 'w-[100%] h-[100%] absolute   bg-black opacity-60     rounded-lg block '}   >
               sarfaraz</div>
@@ -82,7 +82,7 @@ export default function Projects() {
         </SwiperSlide>
       
         <SwiperSlide>
-          <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="  sm:w-[80%] lg:w-[70%] xl:w-[55%] 2xl:w-[50%]   relative  shadow-md w-[95%] h-[75%] bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
+        <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="sm:w-[80%] lg:w-[70%] xl:w-[55%] 2xl:w-[55%] bg-center  bg-cover relative  shadow-md w-[95%] h-[30%] sm:h-[70%] 2xl:h-[85%]  bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
             <img className='h-full w-full bg-cover absolute rounded-lg bg-center' src="public/WhatsApp Image 2024-05-10 at 7.38.19 AM (1).jpeg" alt="image " />
             <div className={value == false ? 'w-[100%] h-[100%] absolute   hidden' : 'w-[100%] h-[100%] absolute   bg-black opacity-60     rounded-lg block '}   >
               sarfaraz</div>
@@ -91,7 +91,7 @@ export default function Projects() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="  sm:w-[80%] lg:w-[70%] xl:w-[55%] 2xl:w-[50%]   relative  shadow-md w-[95%] h-[75%] bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
+        <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="sm:w-[80%] lg:w-[70%] xl:w-[55%] 2xl:w-[55%] bg-center  bg-cover relative  shadow-md w-[95%] h-[30%] sm:h-[70%] 2xl:h-[85%]  bg-green-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
             <img className='h-full w-full bg-cover absolute rounded-lg bg-center' src="public/WhatsApp Image 2024-05-10 at 7.38.19 AM (1).jpeg" alt="image " />
             <div className={value == false ? 'w-[100%] h-[100%] absolute   hidden' : 'w-[100%] h-[100%] absolute   bg-black opacity-60     rounded-lg block '}   >
               sarfaraz</div>
@@ -100,7 +100,7 @@ export default function Projects() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="  sm:w-[80%] lg:w-[70%] xl:w-[55%] 2xl:w-[50%]   relative  shadow-md w-[95%] h-[75%] bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
+        <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="sm:w-[80%] lg:w-[70%] xl:w-[55%] 2xl:w-[55%] bg-center  bg-cover relative  shadow-md w-[95%] h-[30%] sm:h-[70%] 2xl:h-[85%]  bg-green-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
             <img className='h-full w-full bg-cover absolute rounded-lg bg-center' src="public/WhatsApp Image 2024-05-10 at 7.38.19 AM (1).jpeg" alt="image " />
             <div className={value == false ? 'w-[100%] h-[100%] absolute   hidden' : 'w-[100%] h-[100%] absolute   bg-black opacity-60     rounded-lg block '}   >
               sarfaraz</div>
@@ -109,7 +109,7 @@ export default function Projects() {
 
 
         <SwiperSlide>
-          <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="  sm:w-[80%] lg:w-[70%] xl:w-[55%] 2xl:w-[50%]   relative  shadow-md w-[95%] h-[75%] bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
+        <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="sm:w-[80%] lg:w-[70%] xl:w-[55%] 2xl:w-[55%] bg-center  bg-cover relative  shadow-md w-[95%] h-[30%] sm:h-[70%] 2xl:h-[85%]  bg-green-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
             <img className='h-full w-full bg-cover absolute rounded-lg bg-center' src="public/WhatsApp Image 2024-05-10 at 7.38.19 AM (1).jpeg" alt="image " />
             <div className={value == false ? 'w-[100%] h-[100%] absolute   hidden' : 'w-[100%] h-[100%] absolute   bg-black opacity-60     rounded-lg block '}   >
               sarfaraz</div>
@@ -120,7 +120,7 @@ export default function Projects() {
 
         
         <SwiperSlide>
-          <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="  sm:w-[80%] lg:w-[70%] xl:w-[55%] 2xl:w-[50%]   relative  shadow-md w-[95%] h-[75%] bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
+        <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="sm:w-[80%] lg:w-[70%] xl:w-[55%] 2xl:w-[55%] bg-center  bg-cover relative  shadow-md w-[95%] h-[30%] sm:h-[70%] 2xl:h-[85%]  bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
             <img className='h-full w-full bg-cover absolute rounded-lg bg-center' src="public/WhatsApp Image 2024-05-10 at 7.38.19 AM (1).jpeg" alt="image " />
             <div className={value == false ? 'w-[100%] h-[100%] absolute   hidden' : 'w-[100%] h-[100%] absolute   bg-black opacity-60     rounded-lg block '}   >
               sarfaraz</div>
@@ -130,7 +130,7 @@ export default function Projects() {
 
 
         <SwiperSlide>
-          <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="  sm:w-[80%] lg:w-[70%] xl:w-[55%] 2xl:w-[50%]   relative  shadow-md w-[95%] h-[75%] bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
+           <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="sm:w-[80%] lg:w-[70%] xl:w-[55%] 2xl:w-[55%] bg-center  bg-cover relative  shadow-md w-[95%] h-[30%] sm:h-[70%] 2xl:h-[85%]  bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
             <img className='h-full w-full bg-cover absolute rounded-lg bg-center' src="public/WhatsApp Image 2024-05-10 at 7.38.19 AM (1).jpeg" alt="image " />
             <div className={value == false ? 'w-[100%] h-[100%] absolute   hidden' : 'w-[100%] h-[100%] absolute   bg-black opacity-60     rounded-lg block '}   >
               sarfaraz</div>
@@ -141,7 +141,7 @@ export default function Projects() {
 
 
         <SwiperSlide>
-          <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="  sm:w-[80%] lg:w-[70%] xl:w-[55%] 2xl:w-[50%]   relative  shadow-md w-[95%] h-[75%] bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
+        <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="sm:w-[80%] lg:w-[70%] xl:w-[55%] 2xl:w-[55%] bg-center  bg-cover relative  shadow-md w-[95%] h-[30%] sm:h-[70%] 2xl:h-[85%]  bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
             <img className='h-full w-full bg-cover absolute rounded-lg bg-center' src="public/WhatsApp Image 2024-05-10 at 7.38.19 AM (1).jpeg" alt="image " />
             <div className={value == false ? 'w-[100%] h-[100%] absolute   hidden' : 'w-[100%] h-[100%] absolute   bg-black opacity-60     rounded-lg block '}   >
               sarfaraz</div>

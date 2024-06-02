@@ -2,6 +2,7 @@ import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from 'gsap';
 import React from 'react';
+import person from "../public/person_icon.png";
 
 gsap.registerPlugin(ScrollTrigger) ;
 
@@ -88,7 +89,7 @@ function About() {
 
         <div className='pragraph4 w-full h-[30%] md:h-[40%] lg:w[40%] lg:h-full flex items-center justify-center  overflow-hidden '>
            <div className='w-80 h-80  rounded-full  overflow-hidden bg-cover object-cover'>
-            <img className='w-full h-full  ' src="https://www.freeiconspng.com/uploads/computer-user-icon-13.png" alt="" />
+            <img className='w-full h-full  ' src={person} alt="image" />
            </div>
         </div>
     </div>
