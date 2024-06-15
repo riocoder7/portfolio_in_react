@@ -65,7 +65,7 @@ function navbar() {
 
   return (
     <>
-      <div id="navbar" className=" topbar w-full h-[950px] xl:h-screen overflow-hidden bg-[#030A16]">
+      <div id="navbar" className=" topbar w-full h-[950px] xl:h-screen overflow-hidden bg-[#030A16] ">
         <div  className="navbar relative  w-full px-10 text-xl flex justify-between lg:justify-around items-center py-6">
           
           <div ref={logo} className="logo text-3xl ">Rio Coder </div>
@@ -117,7 +117,7 @@ function navbar() {
                   </div>
                   
                   <div>
-                    <a href="#projects"> Services </a>
+                    <a href="#services"> Services </a>
                   </div>
                   
                   <div className="btn flex gap-4 w-56 justify-center cursor-pointer lg:my-10  h-12 items-center rounded-lg text-lg bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">

@@ -67,11 +67,12 @@ function Footer() {
          <SocialMedia /> 
        </span>
      
-     <div className='links flex justify-center  sm:gap-12 lg:gap-36 xl:gap-44 text-xl sm:my-10 font-semibold  md:gap-20 gap-5'>
+     <div className='links flex justify-center text-sm  sm:gap-5 lg:gap-28 xl:gap-44 sm:text-xl sm:my-10 font-semibold  md:gap-20 gap-5'>
       <a className='home' href="#navbar">Home </a>
       <a className='about' href="#about"> About </a>
       <a className='contact' href="#contactus">Contacts </a>
       <a className='project' href="#projects">Projects </a>
+      <a className='project' href="#services">services </a>
      </div>
       
           

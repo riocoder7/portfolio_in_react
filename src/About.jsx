@@ -67,7 +67,7 @@ function About() {
   })
   return (
 
-    <div className='about font-mono overflow-hidden '>
+    <div id='about' className='about font-mono overflow-hidden '>
       <h1 className='tittle text-center text-4xl font-semibold my-10'> <span className=' text-[#02EEFE]'>About </span> Us</h1>
     <div className='w-full h-[120vh] sm:h-[750px] lg:h-[500px] lg:flex  '>
 
