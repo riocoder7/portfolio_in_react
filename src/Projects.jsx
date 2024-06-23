@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-// Import Swiper React components
+import ProjectsProps from "./ProjectsProps";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
@@ -63,91 +63,49 @@ export default function Projects() {
         className="mySwiper "
       >
         <SwiperSlide>
-          <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="sm:w-[90%] lg:w-[80%] xl:w-[80%] 2xl:w-[70%] bg-center  bg-cover relative  shadow-md w-[95%] h-[65%] md:w-[95%] sm:h-[60%] 2xl:h-[85%]  rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
-            
-            <img className='h-full w-full absolute rounded-lg bg-cente   ' src="public/Screenshot from 2024-04-13 19-34-20.png" alt="image " />
-            <div className={value == false ? 'w-[100%] h-[100%] absolute   hidden' : 'w-[100%] h-[100%] absolute   bg-black opacity-60     rounded-lg block '}   >
-              sarfaraz</div>
-          </div>
-
+         <ProjectsProps image="public/person_icon.png"/>
         </SwiperSlide>
         
         <SwiperSlide>
-        <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="sm:w-[90%] lg:w-[80%] xl:w-[80%] 2xl:w-[70%] bg-center  bg-cover relative  shadow-md w-[95%] h-[65%] md:w-[95%] sm:h-[60%] 2xl:h-[85%]  bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
-            <img className='h-full w-full bg-cover absolute rounded-lg bg-center' src="public/WhatsApp Image 2024-05-10 at 7.38.19 AM (1).jpeg" alt="image " />
-            <div className={value == false ? 'w-[100%] h-[100%] absolute   hidden' : 'w-[100%] h-[100%] absolute   bg-black opacity-60     rounded-lg block '}   >
-              sarfaraz</div>
-          </div>
-
+        <ProjectsProps image="public/Screenshot from 2024-04-13 19-34-20.png"/>
         </SwiperSlide>
       
-        <SwiperSlide>
-        <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="sm:w-[90%] lg:w-[80%] xl:w-[80%] 2xl:w-[70%] bg-center  bg-cover relative  shadow-md w-[95%] h-[65%] md:w-[95%] sm:h-[60%] 2xl:h-[85%]  bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
-            <img className='h-full w-full bg-cover absolute rounded-lg bg-center' src="public/WhatsApp Image 2024-05-10 at 7.38.19 AM (1).jpeg" alt="image " />
-            <div className={value == false ? 'w-[100%] h-[100%] absolute   hidden' : 'w-[100%] h-[100%] absolute   bg-black opacity-60     rounded-lg block '}   >
-              sarfaraz</div>
-          </div>
+       <SwiperSlide>
+       <ProjectsProps image="public/img2.jpeg"/>
+       </SwiperSlide>
 
+        <SwiperSlide>
+        <ProjectsProps image="public/Screenshot from 2024-04-13 19-34-20.png"/>
         </SwiperSlide>
 
         <SwiperSlide>
-        <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="sm:w-[90%] lg:w-[80%] xl:w-[80%] 2xl:w-[70%] bg-center  bg-cover relative  shadow-md w-[95%] h-[65%] md:w-[95%] sm:h-[60%] 2xl:h-[85%]  bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
-            <img className='h-full w-full bg-cover absolute rounded-lg bg-center' src="public/WhatsApp Image 2024-05-10 at 7.38.19 AM (1).jpeg" alt="image " />
-            <div className={value == false ? 'w-[100%] h-[100%] absolute   hidden' : 'w-[100%] h-[100%] absolute   bg-black opacity-60     rounded-lg block '}   >
-              sarfaraz</div>
-          </div>
-
-        </SwiperSlide>
-
-        <SwiperSlide>
-        <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="sm:w-[90%] lg:w-[80%] xl:w-[80%] 2xl:w-[70%] bg-center  bg-cover relative  shadow-md w-[95%] h-[65%] md:w-[95%] sm:h-[60%] 2xl:h-[85%]  bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
-            <img className='h-full w-full bg-cover absolute rounded-lg bg-center' src="public/WhatsApp Image 2024-05-10 at 7.38.19 AM (1).jpeg" alt="image " />
-            <div className={value == false ? 'w-[100%] h-[100%] absolute   hidden' : 'w-[100%] h-[100%] absolute   bg-black opacity-60     rounded-lg block '}   >
-              sarfaraz</div>
-          </div>
+        <ProjectsProps image="public/img1.jpeg"/>
         </SwiperSlide>
 
 
         <SwiperSlide>
-        <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="sm:w-[90%] lg:w-[80%] xl:w-[80%] 2xl:w-[70%] bg-center  bg-cover relative  shadow-md w-[95%] h-[65%] md:w-[95%] sm:h-[60%] 2xl:h-[85%]  bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
-            <img className='h-full w-full bg-cover absolute rounded-lg bg-center' src="public/WhatsApp Image 2024-05-10 at 7.38.19 AM (1).jpeg" alt="image " />
-            <div className={value == false ? 'w-[100%] h-[100%] absolute   hidden' : 'w-[100%] h-[100%] absolute   bg-black opacity-60     rounded-lg block '}   >
-              sarfaraz</div>
-          </div>
-
+        <ProjectsProps image="public/Screenshot from 2024-04-13 19-34-20.png"/>
         </SwiperSlide>
 
 
         
         <SwiperSlide>
-        <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="sm:w-[90%] lg:w-[80%] xl:w-[80%] 2xl:w-[70%] bg-center  bg-cover relative  shadow-md w-[95%] h-[65%] md:w-[95%] sm:h-[60%] 2xl:h-[85%]  bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
-            <img className='h-full w-full bg-cover absolute rounded-lg bg-center' src="public/WhatsApp Image 2024-05-10 at 7.38.19 AM (1).jpeg" alt="image " />
-            <div className={value == false ? 'w-[100%] h-[100%] absolute   hidden' : 'w-[100%] h-[100%] absolute   bg-black opacity-60     rounded-lg block '}   >
-              sarfaraz</div>
-          </div>
+        <ProjectsProps image="public/img1.jpeg"/>
 
         </SwiperSlide>
 
 
         <SwiperSlide>
-        <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="sm:w-[90%] lg:w-[80%] xl:w-[80%] 2xl:w-[70%] bg-center  bg-cover relative  shadow-md w-[95%] h-[65%] md:w-[95%] sm:h-[60%] 2xl:h-[85%]  bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
-            <img className='h-full w-full bg-cover absolute rounded-lg bg-center' src="public/WhatsApp Image 2024-05-10 at 7.38.19 AM (1).jpeg" alt="image " />
-            <div className={value == false ? 'w-[100%] h-[100%] absolute   hidden' : 'w-[100%] h-[100%] absolute   bg-black opacity-60     rounded-lg block '}   >
-              sarfaraz</div>
-          </div>
+        <ProjectsProps image="public/Screenshot from 2024-04-13 19-34-20.png"/>
 
         </SwiperSlide>
 
 
 
         <SwiperSlide>
-        <div onMouseEnter={() => setvalue(true)} onMouseLeave={() => setvalue(false)} className="sm:w-[90%] lg:w-[80%] xl:w-[80%] 2xl:w-[70%] bg-center  bg-cover relative  shadow-md w-[95%] h-[65%] md:w-[95%] sm:h-[60%] 2xl:h-[85%]  bg-red-500 rounded-lg shadow-blue-600/200 hover:scale-100 hover:-translate-y-6 hover:duration-700 ">
-            <img className='h-full w-full bg-cover absolute rounded-lg bg-center' src="public/WhatsApp Image 2024-05-10 at 7.38.19 AM (1).jpeg" alt="image " />
-            <div className={value == false ? 'w-[100%] h-[100%] absolute   hidden' : 'w-[100%] h-[100%] absolute   bg-black opacity-60     rounded-lg block '}   >
-              sarfaraz</div>
-          </div>
+        <ProjectsProps image="public/img1.jpeg"/>
 
-        </SwiperSlide>
+        </SwiperSlide> 
 
 
         
